@@ -33,6 +33,17 @@ int main(int argc, char **argv)
     {
         cout<<"Wszystkie liczby są równe"<<endl;
     }
-    
+    else if(a>b && a==c)
+    {
+        cout<<"Największymi liczbami są a="<<a<<" i c="<<c<<endl;
+    }
+    else if(a<b && b==c)    
+    {
+        cout<<"Największymi liczbami są b="<<b<<" i c="<<c<<endl;
+    }
+    else if(a>c && a==b)
+    {
+        cout<<"Największymi liczbami są a="<<a<<" i b="<<b<<endl;
+    }
 	return 0; 
 }
