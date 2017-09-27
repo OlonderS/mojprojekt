@@ -7,9 +7,8 @@ using namespace std;
 
 int main(int argc, char **argv)
 {    
-    int a=0;
-    int b=0;
-    int c=0;
+    int a, b, c;
+    a=b=c=0;
     cout <<"Podaj pierwszą liczbę: ";
     cin>>a;
     cout<<"Podaj drugą liczbę: ";
