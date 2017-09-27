@@ -14,7 +14,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    int a, b, c, p;
+    float a, b, c;
     a=b=c=0;
     float p;
     float pole;
@@ -26,12 +26,15 @@ int main(int argc, char **argv)
     cout<<"Podaj długość trzeciego boku: ";
     cin>>c;
     
-    if(a+b>c || a+c>b || b+c>a)
+    if(a+b>c && a+c>b && b+c>a)
     {
-        cout<<"Obwód jest równy: "<<a+b+c;
+        cout<<"Obwód jest równy: "<<a+b+c<<endl;
         p=(a+b+c)/2;
-        cout<<"Pole jest równe: " <<sqrt
+        pole=sqrt(p*(p-a)*(p-b)*(p-c));
+        cout<<"Pole jest równe: " <<pole;
     }
+    else
+    cout<<"Nie można utworzyć trójkąta";
 	return 0;
 }
 
