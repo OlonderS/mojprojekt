@@ -16,8 +16,9 @@ int main(int argc, char **argv)
 {
     float a, b, c;
     a=b=c=0;
-    float p;
-    float pole;
+    float p=0;
+    float pole=0;
+    float obwod=0;
     
     cout<<"Podaj długość pierwszego boku: ";
     cin>>a;
@@ -28,13 +29,13 @@ int main(int argc, char **argv)
     
     if(a+b>c && a+c>b && b+c>a)
     {
-        cout<<"Obwód jest równy: "<<a+b+c<<endl;
-        p=(a+b+c)/2;
+        obwod=a+b+c;
+        p=0.5*obwod;
         pole=sqrt(p*(p-a)*(p-b)*(p-c));
+        cout<<"Obwód jest równy: "<<obwod<<endl;
         cout<<"Pole jest równe: " <<pole;
     }
     else
     cout<<"Nie można utworzyć trójkąta";
 	return 0;
 }
-
