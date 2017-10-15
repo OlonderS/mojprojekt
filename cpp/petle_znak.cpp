@@ -11,12 +11,13 @@ using namespace std;
 int main(int argc, char **argv)
 {
 	char zn=0;
-
-    while(zn!='t' || zn!='T' || zn!='n' || zn!='N')
+    
+    while(zn !='t' && zn !='T' && zn !='n' && zn !='N' )
     {
-    cout<<"Podaj znak: ";
-    cin>>zn
+        cout<<"Podaj literę: ";
+        cin>>zn;
     }
+        cout<<"Brawo zgadłeś!"<<endl;
 
 	return 0;
 }
