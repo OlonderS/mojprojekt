@@ -19,17 +19,13 @@ int mnoz (int m1, int m2)
 {
     return m1*m2;
 }
-float dziel(float d1, float d2)
+void podziel(int a, int b)
 {
-    if(d2==0)
+    if(b==0)
     {
-        cout<<"Nie dziel przez 0"<<endl;
-    
-       }
-    else
-{    
-    return d1/d2;
-}
+    cout<<"Iloraz: Nie dziel przez 0!";
+    }
+    else cout<<a/b;
 }
 int main(int argc, char **argv)
 {
@@ -42,7 +38,7 @@ int main(int argc, char **argv)
     dodaj(a,b);  //po nazwie funkcji zawsze nawiasy; wywołanie funkcji
     cout<<"Różnica: "<<odejmij(a, b)<<endl;
     cout<<"Iloczyn: "<<mnoz(a, b)<<endl;
-    cout<<"Iloraz: "<<dziel(a, b)<<endl;
+    podziel(a,b);
 	return 0;
 }
 
