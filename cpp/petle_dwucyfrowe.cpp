@@ -17,9 +17,9 @@ int main(int argc, char **argv)
     
     while(m<10 || m>99 || n<m)
     {
-        cout<<"Podaj pierwszą liczbę (10-100): ";
+        cout<<"Podaj pierwszą liczbę (10-99): ";
         cin>>m;
-        cout<<"Podaj drugą liczbę (10-100): ";
+        cout<<"Podaj drugą liczbę (10-99): ";
         cin>>n;
     }
     while(m<=n)
@@ -28,7 +28,7 @@ int main(int argc, char **argv)
         {
             cout<<m<<endl;
         }
-        m+=2;
+        m+=1;
     }
     
     return 0;
