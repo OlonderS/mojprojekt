@@ -38,6 +38,7 @@ int main(int argc, char **argv)
     dodaj(a,b);  //po nazwie funkcji zawsze nawiasy; wywołanie funkcji
     cout<<"Różnica: "<<odejmij(a, b)<<endl;
     cout<<"Iloczyn: "<<mnoz(a, b)<<endl;
+    cout<<"Iloraz: "; 
     podziel(a,b);
 	return 0;
 }
