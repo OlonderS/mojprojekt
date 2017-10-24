@@ -33,9 +33,10 @@ int main(int argc, char **argv)
     cout<<"Podaj krok: ";
     cin>>krok;
     
-    
+     //cout<<&liczba<<" "<<&krok<<endl;//pokazuje adres komórek
+     
     zwieksz3(liczba, krok);
-    zwieksz3(liczba, krok);
+ 
     
     cout<<"Liczba: "<<liczba<<endl;
     cout<<"Krok: "<<krok<<endl;
