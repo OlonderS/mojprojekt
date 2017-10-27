@@ -42,5 +42,6 @@ int main(int argc, char **argv)
     
         cout<<"Suma="<<sumuj(liczby, rozmiar)<<endl;//zwraca wartość
         cout<<"Średnia artmetyczna wynosi: "<<(liczsrednia(liczby, rozmiar))<<endl;
+    return 0;
 }
 
