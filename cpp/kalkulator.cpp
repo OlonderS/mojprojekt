@@ -14,9 +14,9 @@ int main(int argc, char **argv)
     int a,b;
     a=b=0;
         
-    cout <<"Podaj pierwszą liczbę: ";
+    cout <<"Podaj pierwsza liczbe: ";
     cin>>a;
-    cout <<"Podaj drugą liczbę: ";
+    cout <<"Podaj druga liczbe: ";
     cin>>b;
     cout <<"Podaj znak: ";
     cin>> znak;
@@ -24,19 +24,19 @@ int main(int argc, char **argv)
     
     if (znak == '+' )
     {
-        cout<<"Suma jest równa: "<<a+b;
+        cout<<"Suma jest rowna: "<<a+b;
     }
     else if (znak== '-')
     {
-        cout<<"Różnica jest równa: "<<a-b;
+        cout<<"Różnica jest rowna: "<<a-b;
     }
     else if (znak== '*')
     {
-        cout<<"Iloczyn jest równy: "<<a*b;
+        cout<<"Iloczyn jest rowny: "<<a*b;
     }
     else if (znak=='/')
     {
-        cout<<"Iloraz jest równy: "<<a/b;
+        cout<<"Iloraz jest rowny: "<<a/b;
     }
 	return 0;
 }

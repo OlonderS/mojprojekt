@@ -14,7 +14,7 @@ int main(int argc, char **argv)
  
      for(;;)//pęla nieskończona
     {
-        cout<<"Podaj liczbę: ";
+        cout<<"Podaj liczbe: ";
         cin>>liczba;
         suma +=liczba; //suma=suma+liczba
         if (suma>100)

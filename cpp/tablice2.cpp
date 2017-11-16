@@ -10,7 +10,7 @@ using namespace std;
 void pobierzDane(int tab[],int ile)//w tablicach od razu używa orginalnych adresów, bez kopii
 {   
     int i=0;
-    cout<<"Podaj "<<ile<<" liczb/y: "<<endl;
+    cout<<"Podaj "<<ile<<" ocen/y: ";
     for(i=0; i<ile; i++)
     {
         cin>>tab[i];
@@ -33,7 +33,7 @@ float liczsrednia(int tab[], int ile)
 int main(int argc, char **argv)
 {   
     int rozmiar=0;
-    cout<<"Ile chcesz podać ocen?: "<<endl;
+    cout<<"Ile chcesz podac ocen?: ";
     cin>>rozmiar;
     //const int abc =5;  zmienna stała
     int liczby[rozmiar]; //ilość zarezerwowanego miejsca dla danej tabeli
@@ -41,7 +41,7 @@ int main(int argc, char **argv)
     pobierzDane(liczby, rozmiar);//nie zwraca wartości
     
         cout<<"Suma="<<sumuj(liczby, rozmiar)<<endl;//zwraca wartość
-        cout<<"Średnia artmetyczna wynosi: "<<(liczsrednia(liczby, rozmiar))<<endl;
+        cout<<"Srednia artmetyczna wynosi: "<<(liczsrednia(liczby, rozmiar))<<endl;
     return 0;
 }
 
