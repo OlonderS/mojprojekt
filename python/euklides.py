@@ -10,12 +10,12 @@ def nwd(a, b):
             b = b - a
     return a
 
+
 def NWDoptymalne(a, b):
     while a > 0:
         a = a % b
         b = b - a
     return b
-
 
 
 def main(args):

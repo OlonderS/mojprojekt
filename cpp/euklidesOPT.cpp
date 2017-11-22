@@ -27,8 +27,8 @@ int nwd(int a, int b)
 {
     while(a > 0)
     {
-        a = a%b;
-        b-=a;
+        a = a % b;
+        b = b - a;
     }
     return b;
 }
