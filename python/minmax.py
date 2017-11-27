@@ -5,9 +5,9 @@ from random import randint
 
 def minimum(lista):
     min = lista[0]
-    for i in lista:
-        if i < min:
-            min = i
+    for indeks in lista:
+        if indeks < min:
+            min = indeks
     return min
 
 
@@ -32,8 +32,10 @@ def minmax(lista):
             lmax.append(lista[indeks + 1])
             lmin.append(lista[indeks])
         indeks += 2
+    print("Maksymalna liczba to:", maksimum(lmax))
+    print("Minimalna liczba to:", minimum(lmin))
 
-    return lista
+    return 0
 
 
 def losuj(ile, zakres):
@@ -50,8 +52,9 @@ def main(args):
     assert minimum([7, 4, 9, 1, 3, 0]) == 0
     assert maksimum([7, 4, 9, 1, 3, 0]) == 9
     print(lista)
-    print("Minimum: ", minimum(lista))
-    print("Maksimum: ", maksimum(lista))
+    minmax(lista)
+    # print("Minimum: ", minimum(lista))
+    # print("Maksimum: ", maksimum(lista))
     return 0
 
 
