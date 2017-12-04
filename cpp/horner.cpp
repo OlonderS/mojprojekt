@@ -12,10 +12,10 @@ using namespace std;
 
 float horner_it(int st, float x, float tbwsp[])
 {
-    float wynik = tbwsp[0]
+    float wynik = tbwsp[0];
     for (int i = 1; i < st+1; i++)
         {
-            wynik = wynik * x + tbwsp[i]
+            wynik = wynik * x + tbwsp[i];
         }
     return wynik;
 }
