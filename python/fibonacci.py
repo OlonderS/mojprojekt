@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+def fib_rek(n):
+    if n < 2:
+        return 1
+    return fib_rek(n - 2) + fib_rek(n - 1)
+
 
 def fib_iter(n):
     """
@@ -65,8 +70,9 @@ def fib_iter2(n):
 
 def main(args):
     liczba = int(input("Podaj ilość wyrazów ciągu: "))
-    fib_iter2(liczba)
-
+    # fib_iter2(liczba)
+    for i in range(liczba):
+        print(i + 1, " wyraz ciagu to: ", fib_rek(i))
     return 0
 
 

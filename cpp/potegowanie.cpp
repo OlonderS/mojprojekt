@@ -6,6 +6,13 @@
 
 using namespace std;
 
+float poteguj_rek(float a, float n)
+{
+	if(n == 0)
+		return 1;
+	return poteguj_rek(a, n-1) * a;
+}
+
 
 float poteguj(float wykladnik, float podstawa)
 {
@@ -31,7 +38,8 @@ int main(int argc, char **argv)
         cin>>wykladnik;
     }while(wykladnik < 0);
     
-    cout<<"Wynik potegowania wynosi: "<<poteguj(wykladnik, podstawa);
+    cout<<"Wynik potegowania wynosi: "<<poteguj(wykladnik, podstawa)<<endl;
+    cout<<"Wynik potegowania wynosi: "<<poteguj_rek(podstawa, wykladnik)<<endl;
     
     return 0;
 }

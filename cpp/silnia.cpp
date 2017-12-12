@@ -6,6 +6,13 @@
 
 using namespace std;
 
+int silnia_rek(int n)
+{
+	if(n<2)
+		return 1;
+	return silnia_rek(n-1) * n;
+}
+
 
 int silnia(int n)
 {
@@ -25,7 +32,8 @@ int main(int argc, char **argv)
     cout<<"Podaj liczbe: ";
     cin>>liczba;
         
-    cout<<"Silnia "<<liczba<<" wynosi: "<<silnia(liczba);
+    cout<<"Silnia "<<liczba<<" wynosi: "<<silnia(liczba)<<endl;
+    cout<<"Silnia "<<liczba<<" wynosi: "<<silnia_rek(liczba);
     
     return 0;
 }
