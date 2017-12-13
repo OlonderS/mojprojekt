@@ -18,12 +18,17 @@ def NWDoptymalne(a, b):
     return b
 
 
+def NWD_opt_rek(a, b):
+    if b == 0:
+        return a
+    return NWD_opt_rek(b, a % b)
+
 def main(args):
-    a = int(input("Podaj pierwsza liczbe:"))
-    b = int(input("Podaj druga liczbe:"))
+    a = int(input("Podaj pierwsza liczbe: "))
+    b = int(input("Podaj druga liczbe: "))
     # print("Największy wspólny dzielnik liczb",
     # a, "i", b, "wynosi:", nwd(a, b))
-    print("Nwd({:d}, {:d}) = {:d}".format(a, b, NWDoptymalne(a, b)))
+    print("Nwd({:d}, {:d}) = {:d}".format(a, b, NWD_opt_rek(a, b)))
     assert NWDoptymalne(1989, 867) == 51
     assert NWDoptymalne(2, 1) == 1
 

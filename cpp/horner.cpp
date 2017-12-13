@@ -10,6 +10,15 @@ using namespace std;
 //W(x) = x(2x^2 + 3x + 5) + 4
 //W(x) = x(x(2x + 3) + 5) + 4 (3)
 
+float horner_rek(int st, float x, float tbwsp[])
+{
+    if st == 0)
+        return tbwsp[0] * x;
+    return horner_rek(st-1, tbwsp, x) * x + tbwsp[st]
+
+}
+
+
 float horner_it(int st, float x, float tbwsp[])
 {
     float wynik = tbwsp[0];

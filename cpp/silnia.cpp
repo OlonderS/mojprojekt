@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     cout<<"Podaj liczbe: ";
     cin>>liczba;
         
-    cout<<"Silnia "<<liczba<<" wynosi: "<<silnia(liczba)<<endl;
+    //cout<<"Silnia "<<liczba<<" wynosi: "<<silnia(liczba)<<endl;
     cout<<"Silnia "<<liczba<<" wynosi: "<<silnia_rek(liczba);
     
     return 0;
