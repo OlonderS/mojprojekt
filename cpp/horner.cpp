@@ -12,12 +12,11 @@ using namespace std;
 
 float horner_rek(int st, float x, float tbwsp[])
 {
-    if st == 0)
-        return tbwsp[0] * x;
-    return horner_rek(st-1, tbwsp, x) * x + tbwsp[st]
+    if (st == 0)
+        return tbwsp[0];
+    return horner_rek(st-1, x, tbwsp) * x + tbwsp[st];
 
 }
-
 
 float horner_it(int st, float x, float tbwsp[])
 {
@@ -42,6 +41,7 @@ int main(int argc, char **argv)
         cin>>wsp[i];
     }
 	cout << "Wartość wielomianu: "<< horner_it(stopien, x, wsp)<<endl;
+	cout << "Wartość wielomianu: "<< horner_rek(stopien, x, wsp)<<endl;
 	return 0;
 }
 
