@@ -33,17 +33,18 @@ void drukuj(int tab[], int n)
 
 int main(int argc, char **argv)
 {
-    int ile = 8;
+    int ile = 7;
     int lista[ile];
     
-    lista[0]= 4; 
-    lista[1]= 3; 
-    lista[2]= 7; 
-    lista[3]= 0; 
-    lista[4]= 2; 
+    lista[0]= 2; 
+    lista[1]= 5; 
+    lista[2]= 8; 
+    lista[3]= 9; 
+    lista[4]= 0; 
     lista[5]= 3; 
-    lista[6]= 1; 
-    lista[7]= 9; 
+    lista[6]= 6; 
+    
+    //int lista [5] =  {3, 4, 5, 6, 7}
     
     cout<<"Przed sortowaniem: "<<endl;
     drukuj(lista, ile);
