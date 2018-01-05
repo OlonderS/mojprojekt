@@ -7,23 +7,23 @@
 
 using namespace std;
 
-int wyszukaj_liniowo(int l[], int n, int el)
+int wyszukaj_liniowo(int tab[], int el, int n)
 {
-    for (int i = 0, i < n; i++ )
+    for(int i=0; i<n; i++)
     {
-        if (l[i] == el)
+        if(tab[i] == el)
             return i;
-    }   
-    return -1
+    }
+    return -1;
 }
-
 
 int main(int argc, char **argv)
 {
-	int lista = {4, 3, 7, 0, 2, 3, 1, 9, -4};
+    int ile = 8;
+    int lista[ile] = {4, 3, 7, 0, 2, 1, 9, -4};
     int el = 3;
     
-    cout<<wyszukaj_liniowo()tab
+    cout<<wyszukaj_liniowo(lista, el, ile);
     
 	return 0;
 }
