@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T11:12:55+01:00
+
+====== Cechy algorytmów ======
+Created piątek 12 styczeń 2018
+
+Specyfilacka problemu - określenie celu, danych początkowych 
+
+
+====== Własności ======
+
+1. Poprawność  -  rozwiązywanie problemy zgodnie ze specyfikacją problemu (zadania)
+	 Algorytm jest częściowo poprawny,  jeśli dla obliczeń, które się skończą, ich wyniki są poprawne względem warunków początkowych i końcowych.
+ 2. Skończoność
+3. Złożoność 
+4. Efektywność
+
+
+Wnioskowanie indukcyjne - metoda dowodzenia czegoś/wyprowadzania wniosków; jest to wnioskowanie  z pewnych obserwacji do wyciągania wniosków ogólnych 
+Wnioskowanie dedukcyjne - prawem ogólnym dowodzi się przypadki szczegółowe 
+
