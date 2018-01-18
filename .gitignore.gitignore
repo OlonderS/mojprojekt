@@ -1,5 +1,7 @@
 *.o
+*.out
 *.obj
 *.exe
 *.lck
 .~*
+.pyc
