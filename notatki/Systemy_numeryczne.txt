@@ -1,4 +1,4 @@
-﻿Content-Type: text/x-zim-wiki
+Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2018-01-17T11:58:30+01:00
 
@@ -65,4 +65,47 @@ Kolejne potęgi liczby 2:
 11111111_{2  }= 255_{10 } = FF_{16 }
 
 FF = 255
+
+
+===== Konwersja liczby dziesiętnej =====
+dec2bin - konwersja liczby dziesiętnej do liczby o podstawie x
+
+==== system binarny ====
+dec2bin 129(10) -> 10000001(2)  - spisywanie reszt od końca  -> 1*2^7 + 1 = 128 + 1
+129/2=64 mod 1  - bit najmniej znaczący
+64/2=32 mod 0
+32/2=16 mod 0
+16/2=8 mod 0
+8/2=4 mod 0
+4/2=2 mod 0
+2/2=1 mod 0
+1/2=0 mod 1 - bit najbardziej znaczący
+
+I WERSJA
+174(10)->10101110(2)  1*2^7 + 1*2^5 + 1*2^3 + 1*2^2 + 1*2^1 -> 128+32+8+4+2=174
+174/2=87 mod 0
+87/2=43 mod 1
+43/2 =21 mod 1
+21/2=10 mod 1
+10/2=5 mod 0
+5/2=2 mod 1
+2/2=1 mod 0
+1/2=0 mod 1
+
+II WERSJA
+174(10)->10101110(2)
+174 - 128 = 46        - nawiększe potęgi dwójki nie większe od liczby
+46 - 32 = 14
+14 - 8 = 6
+6 - 4 = 2
+2 - 2 = 0
+
+==== system ósemkowy ====
+174(10)->256(8) = 2*64+5*8+6=256
+174/8=21 mod 6
+21/8=2 mod 5
+2/8=0 mod 2
+
+174-64=110
+
 
