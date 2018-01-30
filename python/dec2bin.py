@@ -14,9 +14,9 @@ def main(args):
     while liczba > 0:
         reszta = liczba % podstawa
         reszty.append(reszta)
-        liczba = liczba // podstawa
+        liczba = int(liczba / podstawa)
 
-    reszty.reverse()
+    reszty.reverse()  #  odwrócenie kolejności
     print(reszty)
 
     return 0
