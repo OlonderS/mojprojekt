@@ -12,7 +12,7 @@ def dec2other(liczba10, podstawa):
         liczba.append(str(reszta))
         liczba10 = int(liczba10 / podstawa)  # dzielenie z przecinkiem
     liczba.reverse()  # odwrócenie kolejności elementów
-    return "".join(liczba)
+    return "".join(liczba)  # złączenie elementów listy danym znakiem
 
 
 def zamiana1():
@@ -24,6 +24,7 @@ def zamiana1():
     print ("wynik konwersji: {}(10) = {}({})".format(
         liczba, dec2other(liczba, podstawa), podstawa))
     # {} - placefolder - miejsce na wynik - liczbę
+    
 
 def other2dec(liczba, podstawa):
     """Zamiana podanej liczby na system dziesiętny"""
@@ -34,6 +35,7 @@ def other2dec(liczba, podstawa):
         potega -=1
 
     return liczba10
+    
 
 
 def zamiana2():
@@ -43,7 +45,7 @@ def zamiana2():
     while podstawa < 2 or podstawa > 16:
         podstawa = int(input("Podaj podstawę: "))
     #  pass
-    print ("wynik konwersji: {}({}) = {}(10)".format(
+    print ("Wynik konwersji: {}({}) = {}(10)".format(
         liczba, other2dec(liczba, podstawa), podstawa))
     # {} - placefolder - miejsce na wynik - liczbę
 
@@ -51,8 +53,11 @@ def zamiana2():
 def main(args):
     print("Zamiana liczby dziesiętnej na liczbę o podanej podstawie"
           "<2;16> lub odwrotnie.")
+          
     zamiana1()
-    zamiana2
+    
+    zamiana2()
+    
     return 0
 
 
