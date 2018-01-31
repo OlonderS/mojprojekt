@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-31T12:00:26+01:00
+
+====== python ======
+Created środa 31 styczeń 2018
+
+ dla str  .isdigit() - sprawdza czy podany łańcuch jest cyfrą
+dla str .join("łącznik/brak znaku") - łączy znaki za pomocą łącznika 
+dla str .format() - formatowane wyjście
+dla sekwencji/str  .reverse() - odwórcenie kolejności elementów
+
+ord(znak) - kod ASCII znaku 
+chr(kod_ASCII) - zwraca znak o podanym kodzie
+len(sekwencja) - długość sekwencji
+
+sekwencje(ang. iterable) - są to napisy (str), listy, słowniki itp

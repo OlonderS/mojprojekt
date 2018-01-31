@@ -24,18 +24,21 @@ def zamiana1():
     print ("wynik konwersji: {}(10) = {}({})".format(
         liczba, dec2other(liczba, podstawa), podstawa))
     # {} - placefolder - miejsce na wynik - liczbę
-    
+
 
 def other2dec(liczba, podstawa):
     """Zamiana podanej liczby na system dziesiętny"""
     liczba10 = 0
     potega = len(liczba) - 1
     for cyfra in liczba:
-        liczba10 += int(cyfra) * (podstawa ** potega)  # ** -potęga
+        if not cyfra.isdigit():
+            liczba10 += (ord(cyfra.upper()) - 55) * (podstawa ** potega)
+        else:
+            liczba10 += int(cyfra) * (podstawa ** potega)  # ** -potęga
         potega -=1
 
     return liczba10
-    
+
 
 
 def zamiana2():
@@ -52,12 +55,9 @@ def zamiana2():
 
 def main(args):
     print("Zamiana liczby dziesiętnej na liczbę o podanej podstawie"
-          "<2;16> lub odwrotnie.")
-          
+          "<2;10> lub {16} lub odwrotnie.")
     zamiana1()
-    
     zamiana2()
-    
     return 0
 
 
