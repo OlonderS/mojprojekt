@@ -5,9 +5,12 @@ Creation-Date: 2018-01-31T12:18:41+01:00
 ====== Kompresja ======
 Created środa 31 styczeń 2018
 
-Unikod (ang. Unicode) – komputerowy zestaw znaków mający w zamierzeniu obejmować wszystkie pisma używane na świecie. Definiują go dwa standardy – Unicode oraz ISO 10646. Znaki obu standardów są identyczne. Standardy te różnią się w drobnych kwestiach, m.in. Unicode określa sposób składu.
+=== Unikod ===
+(ang. Unicode) – komputerowy zestaw znaków mający w zamierzeniu obejmować wszystkie pisma używane na świecie. Definiują go dwa standardy – Unicode oraz ISO 10646. Znaki obu standardów są identyczne. Standardy te różnią się w drobnych kwestiach, m.in. Unicode określa sposób składu.
 
-UTF-8 – system kodowania Unicode (najpopularniejszy), wykorzystujący od 1 do 6 bajtów do zakodowania pojedynczego znaku, w pełni kompatybilny z ASCII. Jest najczęściej wykorzystywany do przechowywania napisów w plikach i komunikacji sieciowej.
+
+=== UTF-8 ===
+ – system kodowania Unicode (najpopularniejszy), wykorzystujący od 1 do 6 bajtów do zakodowania pojedynczego znaku, w pełni kompatybilny z ASCII. Jest najczęściej wykorzystywany do przechowywania napisów w plikach i komunikacji sieciowej.
 
 Pierwszy sposób: Kod Morse'a (bezstratny) - kodowanie znaków w skrótowy sposób
 SOS: 000111000 - ***---***
@@ -25,4 +28,27 @@ formaty wideo i audio(kompresowane):
 matroska .mkv
 .avi 
 .mp4
-formaty kompresowania dźwięku i na czym polega
+
+Formaty stosowane do kompresowania dźwięków:
+1. MP1, MP2, MP3
+2. WMA (Windows Media Audio)
+3. MP3PRO
+4. OGG Vorbis
+5. AAC (Advanced Audia Coding)
+6. A/52 (Dolby Digital, AC3)
+7. Musepack (MPC)
+8. Adaptive Transform Acoustic Coding (ATRAC)
+
+=== Bitrate ===
+(przepływność) występuje we wszystkich formatach audiowideo - ilośc danych w bitach na sekunde np w
+mp3 128bit/s
+cd 256 bit/s
+
+=== ASCII ===
+
+null (nic) - 00
+line feed (koniec linii) -  10
+carriage return - 13
+w programach windowsowych koniec linii ma razem LF CR
+w pozostałych samo LF
+
