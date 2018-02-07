@@ -2,23 +2,38 @@
 # -*- coding: utf-8 -*-
 
 def szyfruj(tekst, klucz):
-    """Szyfrowanie tekstu za pomocą szyfru cezara"""
+    """Szyfrowanie tekstu za pomocą szyfru Cezara"""
+
     szyfrogram = ""
     klucz = klucz % 26
     for znak in tekst:
         ascii = ord(znak) + klucz
-        if ascii > 90:
+        if ord(znak) == 32:
+            ascii = 32
+        if ascii > 90 and ascii < 97:
+            ascii -= 26
+        elif ascii > 122:
             ascii -= 26
         szyfrogram += chr(ascii)
     return szyfrogram
 
 
+
 def deszyfruj(szyfrogram, klucz):
     tekst = ""
-    pass
+    for znak in szyfrogram:
+        ascii = ord(znak) - klucz
+        if ord(znak) == 32:
+            ascii = 32
+        if ascii > 90 and ascii < 97:
+            ascii -= 26
+        elif ascii > 122:
+            ascii -= 26
+        tekst += chr(ascii)
     return tekst
 
-#obsłużyć małe i duże litery i spacje
+# obsłużyć małe i duże litery
+# obsłużyć spacje
 
 
 def main(args):
@@ -28,8 +43,6 @@ def main(args):
     print(szyfrogram)
     print(deszyfruj(szyfrogram, klucz))
     return 0
-
-
 
 
 if __name__ == '__main__':
