@@ -15,4 +15,23 @@ Do odszyfrowania szyfrogramu potrzebny jest **algorytm szyfrowania** oraz **kluc
 ==== Rodzaje szyfrów ====
 
 === Podstawieniowe ===
-Szyfr Cezara
+Szyfr Cezara, klucz to odległość zastępnika, przesuwanie znaków ilość
+
+
+=== Przestawieniowe ===
+Zapis tekstu w wierszach o ustalonej długości
+Klucz to ilośc kolumn, na które dzielimy tekst
+
+TOBEORNOTT     ---> 10 kolumn, 3 wiersze
+OBETHATISTH
+EQUESTION
+
+
+TOBEORNOTT  → 10 kolumn, 4 wiersze - do niepełnego wiersza dopisuje sie kropki, czyta sie w pionie     
+OBETHATISTH
+EQUESTION
+AND.......
+
+
+
+
