@@ -16,6 +16,7 @@ Do odszyfrowania szyfrogramu potrzebny jest **algorytm szyfrowania** oraz **kluc
 
 === Podstawieniowe ===
 Szyfr Cezara, klucz to odległość zastępnika, przesuwanie znaków ilość
+Szyfr Vigenère’a
 
 
 === Przestawieniowe ===
