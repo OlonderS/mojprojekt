@@ -3,20 +3,15 @@
 
 def szyfruj(tekst, haslo):
     szyfrogram = []
-    # litery = 'AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSTUVWXYZŹŻ'
     litery = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
     numer_litery = 0
 
     for i in tekst:
         index = litery.find(i)  # szuka w liscie litery indexu 'i' z tekstu
-        # print("Numer: ", num)
         if index != -1:  # jesli litera z tekstu nie znalazla sie w alfabecie
             index += litery.find(haslo[numer_litery])
             # jesli wyjdziemy poza 26(litery alfabetu) to dzielimy modulo przez 26 i dodajemy reszte
             index %= 26
-            # index %= 34 # dla alfabetu polskiego
-
             szyfrogram.append(litery[index])
             numer_litery += 1  # przechodzimy do kolejnej litery w hasle
             if numer_litery == len(haslo):
@@ -29,7 +24,6 @@ def szyfruj(tekst, haslo):
 
 def deszyfruj(szyfrogram, haslo):
     tekst = []
-    # litery = 'AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSTUVWXYZŹŻ'
     litery = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     numer_litery = 0
 
@@ -38,8 +32,6 @@ def deszyfruj(szyfrogram, haslo):
         if index != -1:
             index -= litery.find(haslo[numer_litery])
             index %= 26
-            # index %= 34 # dla alfabetu polskiego
-
             tekst.append(litery[index])
             numer_litery += 1
             if numer_litery == len(haslo):

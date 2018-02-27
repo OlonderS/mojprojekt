@@ -34,5 +34,21 @@ EQUESTION
 AND.......
 
 
+=== Asymetryczne ===
+
+Kryptografia klucza publicznego (nazywana również kryptografią asymetryczną) to rodzaj kryptografii, w którym używa się zestawów dwu lub więcej powiązanych ze sobą kluczy, umożliwiających wykonywanie różnych czynności kryptograficznych.
+
+Zastosowanie:
+1. wczytywanie stron
+2. szyfrowanie poczty
+3. komunikatory
+
+protokuł https -  szyfrowana wersja protokołu HTTP
+
+TLS – przyjęte jako standard w Internecie rozwinięcie protokołu SSL (ang. Secure Socket Layer), zaprojektowanego pierwotnie przez Netscape Communications. TLS zapewnia poufność i integralność transmisji danych, a także uwierzytelnienie serwera, a niekiedy również klienta.
+
+certyfikat - gwarancja tożsamości osoby posiadającej certyfikat
+
+Pretty Good Privacy (PGP) – narzędzie do szyfrowania poczty elektronicznej.
 
 
