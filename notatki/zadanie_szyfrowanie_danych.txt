@@ -1,0 +1,27 @@
+﻿Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-27T12:58:40+01:00
+
+====== zadanie ======
+Created wtorek 27 luty 2018
+
+zaszyfruj swoje dane osobwe:
+imie nazwisko dana urodzenia, miejsce urodzenia
+przy użyciu 3 poznanych szyfrów:
+szyfru Cezara, szyfru przestawieniowego oraz szyfru Vigenere'a
+
+w odpowiedzi podaj szyfrogramy i klucze
+
+Kamil Kucma urodzony 9 lutego 2000 w Sandomierzu
+
+1. Szyfr Cezara
+Zaszyfrowane: Mcokn Mweoc wtqfbqpa B nwvgiq 4222 y Ucpfqokgtbw
+Klucz: 2
+
+2. Szyfr przestawieniowy
+Zaszyfrowane: Klcuz uo0 dea mro9t 0sormkaon e2 amaziu dylg0wniu
+Klucz: 4
+
+3.Szyfr Vigenere
+Zaszyfrowane: YKAVZ UIPAK IECNNBBI 9 ZHHOUB 2000 K COARYAVSBNH
+Klucz: okon
