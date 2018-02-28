@@ -3,7 +3,7 @@
 
 #osoba="KaMiL"
 #osoba='KaMiL'
-osoba=input('Jak się nazywasz?\n ')#traktuje wszystko jako tekst
+osoba=input('Jak się nazywasz?\n ')#traktuje wszystko jako tekst  
 print("Witaj", osoba,'!')
 
 rok=2017
