@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T11:03:54+01:00
+
+====== logiczny model komputera ======
+Created piątek 02 marzec 2018
+
+Architektura von Neumanna – pierwszy rodzaj architektury komputera, opracowanej przez Johna von Neumanna, Johna W. Mauchly’ego oraz Johna Presper Eckerta w 1945 roku. Cechą charakterystyczną tej architektury jest to, że dane przechowywane są wspólnie z instrukcjami, co sprawia, że są kodowane w ten sam sposób.
+
+== napięcie w komputerze 3-5V - logiczna 1 ==
+== napięcie 0,2V - logiczne 0 ==
+
+== Logiczne składniki komputera: ==
+1. Procesor - jednostka arytmetyczno-logiczna odpowiedzialna za wykonywanie podstawowych operacji arytmetycznych  			procesor taktowany częstotliwością 1 GHz wykonuje 1 miliard podstawowych operacji w ciągu sekundy.
+Procesor składa się z rejestrów - komórek pamięci o niewielkich rozmiarach (najczęściej 64 bitów) umieszczone wewnątrz procesora i służące do przechowywania tymczasowych wyników obliczeń, adresów lokacji w pamięci operacyjnej itd.
+
+2. Pamięć - pamięć komputerowa o dostępie swobodnym przechowująca dane programu oraz instrukcje programu; każda komórka pamięci ma unikatowy identyfikator nazywany jej adresem
+
+3. Jednostka sterująca - synchoronizuje pracę logicznych modułów komputera.  Za pomocą szyny systemowej (daje podstawowe taktowanie) komunikuje się z pamięcią i procesorem.
+Oprócz szyny systemowej występują szyny danych ( wysyłają w odpowiedniej częst.) oraz szyna adresowa (gdzie maja trafić dane, do konkretnych miejsc)
+
+4. Urządzeń wejścia/wyjścia służących do interakcji z operatorem, udostępnia je BIOS
+
+
+Część danych po włączeniu komputera bierze się z pamięci
+
+== ROM ==
+pamięć półprzewodnikowa urządzenia elektronicznego, w szczególności komputera, z której dane można tylko odczytywać, natomiast zapis jest niemożliwy. W tego typu pamięciach przechowywane są dane, które muszą być zachowane po odłączeniu urządzenia od zasilania (np. BIOS -  podstawowy system wejścia-wyjścia – zapisany w pamięci stałej zestaw podstawowych procedur pośredniczących pomiędzy systemem operacyjnym, a sprzętem. Posiada on własną pamięć konfiguracji, w której znajdują się informacje dotyczące daty, czasu oraz danych na temat wszystkich urządzeń zainstalowanych w komputerze. )
+
+
+Unified Extensible Firmware Interface (UEFI) – interfejs pomiędzy systemem operacyjnym a firmware, opracowywany jako następca BIOS-u w komputerach osobistych. Umożliwia komputerowi dostęp do urządzeń wejścia i wyjścia.
