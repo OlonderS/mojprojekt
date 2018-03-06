@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-06T12:53:28+01:00
+
+====== systemy operacyjne ======
+Created wtorek 06 marzec 2018
+
+pierwsze komputery nie miały systemów, były konstruowane do danego zadania (lata 50)
+pierwsze systemy nie były uniwersalne, przeznaczone do danych maszyn
+
+== otwarty system operacyjny ==
+(np Linux) - kod źródłowy systemu jest uniwersalny, działa na wielu architekturach sprzętowych; źródła danego opragromowania są publicznie dostępne 
+
+
+debian najstarszy z dystrybucji Linuxa, działa m.in na amd64/amdx64  (architektura 64bitowa), i386 (architektura 32bitowa
+ARM - architektura 32 i 64 bitowa przeznaczona do urządzeń mobilnych
+
+
+hardware - sprzęt komputerowy, software - oprogramowanie, user - użytkownik  
+System operacyjny łączy te 3 czynniki 
+
+
+== Składniki systemu operacyjnego ==
+1. Jądro - warstwa operująca bezpośrednio na sprzęcie, pierwsze się ładuje i wykonuje, wczytuje sterowniki, robi to w formie wirtualnej
+2. Sterowniki urządzeń zewnętrznych 
+
+== Funkcje ==
+Wirtualizuje sprzęt
+umożliwia działanie komputera
+zarządzanie zasobami sprzętu dla wielu użytkowników (wcześniej tylko dla 1)
+
+Interface - design systemu, jego wygląd
+interface tekstowy był udostępniany  formie terminala
+interface graficzny (dzisiejszy)
