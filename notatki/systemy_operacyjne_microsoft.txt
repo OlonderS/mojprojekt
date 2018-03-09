@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-09T11:00:03+01:00
+
+====== systemy operacyjne microsoft ======
+Created piątek 09 marzec 2018
+
+Podstawą pierwszego systemu microsoft był kod źródłowy systemu QDOS i powstał z niego system DOS.
+
+a i b - litery zarezerwowane dla stacji dyskietek
+c - z litery zarezerwowane dla dysków
+
+ścieżka względna - sposób dotarcia do miejsca, z którego się znajdujemy (cd tmp)(cd plik)
+ścieżka bezwzględna - podawana od katologu głównego do danego miejsca (podawanie pełnego adresu)				
+
+linux       /  -seperator plików
+dos        \		
+..   poziom do góry
+
+w windowsie pliki rozpoznawane są po rozszerzeniu, a w linuxie po nagłówku (niekonieczne rozszerzenia)
+.exe .com pliki które mozna uruchomic
+każdy plik miał swoje atrybuty:
+a - plik zapisany na dysku
+r - tylko do odczytu
+h - ukryty
+s - systemowy
+
+dos obsługiwał jedynie 640KB pamięci, nie można było załadować pliku + 64KB, wykorzystywał tryb rzeczywisty procesora, miał wiele ograniczeń
+
+pierwszy interface pojawił się w windowsie 3.11
+okienka, menu, ikony, pasek tytułu, minimalizowanie, maksymalizacja, zamykanie, otwieranie
