@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-13T13:17:13+01:00
+
+====== LINUX ======
+Created wtorek 13 marzec 2018
+
+Linux - jedna z najważniejszych, wolna część wielu uniksopodobnych systemów operacyjnych, jest otwartym oprogramowaniem, dostępnym dla każdeg, jest podstawą każdego urządzenia sterowanego (np telewizory, telefony)
+
+dystrybucja składa się z jądra i oprogramowania dodatkowego (np Debian)
+system = jądro + interface + oprogramowanie
+
+Partycja – logiczny, wydzielony obszar dysku twardego, który może być sformatowany przez system operacyjny w odpowiednim systemie plików.
