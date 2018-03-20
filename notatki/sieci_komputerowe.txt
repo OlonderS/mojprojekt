@@ -1,0 +1,55 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-20T12:54:32+01:00
+
+====== sieci komputerowe ======
+Created wtorek 20 marzec 2018
+
+== Host – ==
+dowolna maszyna (komputer, karta sieciowa, modem itp.) uczestnicząca w wymianie danych lub udostępniająca usługi sieciowe poprzez sieć komputerową za pomocą protokołu komunikacyjnego TCP/IP oraz posiadająca własny adres IP.
+
+== Klient - ==
+Jest to strona żądająca dostępu do danej usługi lub zasobu.
+
+
+== Serwer  - ==
+Jest to strona świadcząca usługę lub udostępniająca zasoby.
+
+
+== LAN – ==
+sieć komputerowa łącząca komputery na określonym obszarze
+skrętka internetowa rj 45
+
+
+== Topologia gwiazdy – ==
+sposób połączenia komputerów w sieci komputerowej, charakteryzujący się tym, że kable sieciowe połączone są w jednym wspólnym punkcie, zwanym punktem dostępu, w którym znajduje się koncentrator lub przełącznik.
+
+
+== Przełącznik sieciowy (z ang. switch) – ==
+urządzenie łączące segmenty sieci komputerowej pracujące głównie w drugiej warstwie modelu ISO/OSI (łącza danych), jego zadaniem jest przekazywanie ramki między segmentami sieci z doborem portu przełącznika, na który jest przekazywana.
+
+
+== Router – ==
+urządzenie sieciowe pracujące w trzeciej warstwie modelu OSI. Służy do łączenia różnych sieci komputerowych  pełni więc rolę węzła komunikacyjnego.
+Ma dwa interfejsy - zewnętrzny i wewnętrzny
+
+
+== Switch (przełącznik sieciowy) – ==
+urządzenie łączące segmenty sieci komputerowej
+Każdy komputer musi mieć:
+ adres IP
+brama domyślna - adres routera
+adres serwera DNS
+
+== Internet ==
+(dosłownie „między-sieć”, sieć sieci) – ogólnoświatowy system połączeń między komputerami, określany również jako sieć sieci[1]. W znaczeniu informatycznym Internet to przestrzeń adresów IP przydzielonych hostom i serwerom połączonym za pomocą urządzeń sieciowych
+
+== Sieć szkieletowa ==
+  – sieć telekomunikacyjna, w tym sieć komputerowa, przez którą przesyłana jest największa liczba informacji. 
+
+== Protokół internetowy, IP – ==
+protokół komunikacyjny warstwy sieciowej modelu OSI. Protokół internetowy to zbiór ścisłych reguł i kroków postępowania, które są automatycznie wykonywane przez urządzenia w celu nawiązania łączności i wymiany danych. Używany powszechnie w Internecie i lokalnych sieciach komputerowych.
+Dane w sieciach IP są wysyłane w formie bloków określanych mianem pakietów. W przypadku protokołu IP, przed rozpoczęciem transmisji nie jest zestawiana wirtualna sesja komunikacyjna pomiędzy dwoma hostami, które nie komunikowały się ze sobą wcześniej.
+np http, ftp
+IP i TCP dwa niezbędne protokoły
+na jednym serwerze/kliencie moze być wiele usług uruchomianych na wielu portach
