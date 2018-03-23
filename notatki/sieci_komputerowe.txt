@@ -31,7 +31,7 @@ urządzenie łączące segmenty sieci komputerowej pracujące głównie w drugie
 
 == Router – ==
 urządzenie sieciowe pracujące w trzeciej warstwie modelu OSI. Służy do łączenia różnych sieci komputerowych  pełni więc rolę węzła komunikacyjnego.
-Ma dwa interfejsy - zewnętrzny i wewnętrzny
+Ma dwa interfejsy - zewnętrzny i wewnętrzny. Zamienia adresy prywatne na publiczne i na odwrót (Network Address Translation)
 
 
 == Switch (przełącznik sieciowy) – ==
@@ -54,6 +54,10 @@ Dane w sieciach IP są wysyłane w formie bloków określanych mianem pakietów.
 np http, ftp
 IP i TCP dwa niezbędne protokoły
 na jednym serwerze/kliencie moze być wiele usług uruchomianych na wielu portach
+wystpęują adresy prywatne (10... 172... 192...) i publiczne
+192.168.3.3/24
+adres sieci    192.168.3.0 /1-254 
+192.168.3.255 -> broadcast 
 
 == Model TCP/IP ==
 – teoretyczny model warstwowej struktury protokołów komunikacyjnych. Model TCP/IP został stworzony w latach 70. XX wieku w DARPA, aby pomóc w tworzeniu odpornych na atak sieci komputerowych. Potem stał się podstawą struktury Internetu.
@@ -76,3 +80,15 @@ http://www.wikipedia.com/wiki/URL
 |      host (adres serwera)
 protokół
 
+== Protokół sterowania transmisją, TCP ==
+– połączeniowy, niezawodny, strumieniowy protokół komunikacyjny stosowany do przesyłania danych między procesami uruchomionymi na różnych maszynach
+
+Jest połączeniowy - tworzy połączenie
+Jest niezawodny - dociera do klienta
+jest stanowy 
+
+
+== Port protokołu – ==
+pojęcie związane z protokołami używanymi w Internecie do identyfikowania procesów działających na odległych systemach. Porty  0-1000 to well known ports
+
+UDP  – jeden z protokołów internetowych. Jest to protokół bezpołączeniowy, więc nie ma narzutu na nawiązywanie połączenia i śledzenie sesji (w przeciwieństwie do TCP). Nie ma też mechanizmów kontroli przepływu i retransmisji. Korzyścią płynącą z takiego uproszczenia budowy jest szybsza transmisja danych i brak dodatkowych zadań
