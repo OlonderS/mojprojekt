@@ -24,7 +24,7 @@ float dzielenie (float a, float b)
 {
     if (b == 0)
     {
-    cout<<"Nie dziel przez";
+    cout<<"Nie dziel przez ";
     return 0;
     }
     else
