@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS miasta;
 DROP TABLE IF EXISTS powierzchnie;
 --dla testów
 CREATE TABLE miasta (
-    id_miasta INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_miasta INTEGER PRIMARY KEY,
     nazwa_miasta TEXT(30),
     wojewodztwo TEXT (20)
 );
@@ -26,6 +26,9 @@ CREATE TABLE powierzchnie (
     id_miasta INTEGER,
     FOREIGN KEY (id_miasta) REFERENCES miasta(id_miasta)
 );
+
+-- dodawanie ręczne:
+-- INSERT INTO miasta VALUES(NULL, 'Warszawa', 'Mazowieckie');
 --z miejsca gdzie jest plik
 --sqlite3 baza.db < bazagus.sql
 --sqlitebaza.db
