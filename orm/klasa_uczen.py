@@ -9,7 +9,7 @@ from peewee import *
 baza_plik='test_orm.db'
 baza=SqliteDatabase(baza_plik) 
 
-###MODELE###s
+###MODELE###
 class BazaModel(Model):
     class Meta:
         database = baza
@@ -38,8 +38,33 @@ def main(args):
         os.remove(baza_plik)
     baza.connect()
     baza.create_tables([Klasa, Uczen, Wynik])
+    
+    ###dodawanie danych###
+    kl3A=Klasa() # obiekt klasy
+    kl3A.nazwa = '3A'
+    kl3A.roknaboru = 2010
+    kl3A.rokmatury = 2013
+    kl3A.save()
+    kl2A = Klasa(nazwa = '2A', roknaboru=2009, rokmatury=2012) # obiekt klasy
+    kl2A.save
+    ucz1 = Uczen(imie='Adam',
+                 nazwisko='Słodowy',
+                 plec=False,
+                 klasa=kl3A)
+    ucz1.save()
+    ucz2 = Uczen(imie='Ewa',
+                 nazwisko='Kolorowa',
+                 plec=True,
+                 klasa=kl2A)
+    ucz2.save()
     return 0
 
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
+
+## source ~/pve3/bin/peewee
+## python plik
+## sqlite3 baza
+## .schema
