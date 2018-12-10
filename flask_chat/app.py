@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# app.py
-
+#
+#  app.py
+#  
 from flask import Flask, g
 from flask import render_template
 from modele import *
@@ -16,11 +17,12 @@ app.config.update(dict(
 def before_request():
     g.db = baza
     g.db.connect()
-    
+
 @app.after_request
 def after_request(response):
     g.db.close()
     return response
+
 
 @app.route('/')
 def index():
@@ -28,13 +30,14 @@ def index():
 
 @app.route('/quiz')
 def quiz():
-    pytania = Pytanie.select().annotate(Odpowiedz)
+    pytania = Pytanie.select().join(Odpowiedz).distinct().order_by(Pytanie.id)
     return render_template('quiz.html', query = pytania)
+
 
 @app.route('/klasa')
 def klasa():
     return render_template('klasa.html')
 
-
 if __name__ == '__main__':
     app.run(debug=True)
+    

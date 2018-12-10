@@ -4,16 +4,21 @@
 
 <head>
 <meta charset="utf-8" />
-<title>Czat - Pytania</title>
+<title>Quiz - Pytania</title>
 </head>
 
 <body>
   <h1>Lista pytań</h1>
   
-  {% for obj in dane query %}
+  {% for p in query %}
   <p>
     <!--wypisujemy id i treść pytania -->
-    {{obj.id}} {{obj.pytanie}}
+    {{p.id}} {{p.pytanie}}
+    <ol>
+    {% for o in p.odpowiedzi %}
+        <li>{{ o.odpowiedz }}</li>
+        {% endfor %}
+    </ol>
   </p>
   {% endfor %}
 </body>

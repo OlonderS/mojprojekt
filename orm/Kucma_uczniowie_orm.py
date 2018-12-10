@@ -3,7 +3,7 @@
 #
 #  uczniowie_orm.py
 import os
-from uczniowie_model import *
+from modele import *
 from baza import czy_jest, czytaj_dane
 
 
@@ -22,13 +22,12 @@ def main(args):
     if os.path.exists(baza_plik):
         os.remove(baza_plik)
     baza.connect()  
-    baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])  # tworzymy tabele
+    baza.create_tables([Kategoria, Pytanie, Odpowiedz])  # tworzymy tabele
 
     dane = {
-        Klasa: 'klasy',
-        Uczen: 'uczniowie',
-        Przedmiot: 'przedmioty',
-        Ocena: 'oceny'
+        Kategoria:'kategorie',
+        Pytanie:'pytania',
+        Odpowiedz:'odpowiedzi'
     }
 
     dodaj_dane(dane)
