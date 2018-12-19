@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>{%block tytul%}{%endblock%}</title>
+    <style type="text/css">
+        body {
+            background:#A5A5A5;
+            color: #ffffff;
+        }
+        #menu li {display: inline;}
+    </style>
+    
+</head>
+
+<body>
+    
+
+    <ul id="menu">
+        <li><a href="{{url_for('index')}}">Strona główna</a></li>  
+        <li><a href="{{url_for('lista')}}">Lista pytań</a></li>        
+        <li><a href="{{url_for('quiz')}}">Quiz</a></li>
+        <li><a href="{{url_for('dodaj')}}">Dodaj pytanie</a></li>
+    </ul>
+
+    <h1>{%block h1%}{%endblock%}</h1>   
+    {%block tresc%}{%endblock%} 
+</body>
+
+</html>
