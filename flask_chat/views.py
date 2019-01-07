@@ -4,7 +4,7 @@
 #  views.py
 #  
 from flask import Flask
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, redirect, url_for, flash
 from modele import *
 from forms import *
 
@@ -35,6 +35,16 @@ def quiz():
     return render_template('quiz.html', query = pytania)
 
 
+def flash_errors(form):
+    """Odczytanie wszystkich błędów formularza i przygotowanie komunikatów"""
+    for field, errors in form.errors.items():
+        for error in errors:
+            if type(error) is list:
+                error = error[0]
+            flash("Błąd: {}. Pole: {}".format(
+                error,
+                getattr(form, field).label.text))
+
 @app.route('/dodaj', methods=['GET', 'POST'])
 def dodaj():
     form = DodajForm()
@@ -49,7 +59,10 @@ def dodaj():
                             pytanie=p.id,
                             odpok=int(o['odpok']))
             odp.save()
+        flash("Dodano pytanie!", "sukces")
         return redirect(url_for('index'))
+    elif request.method == 'POST':
+        flash_errors(form)
     return render_template('dodaj.html', form=form)
 
     

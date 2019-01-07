@@ -2,8 +2,12 @@
 {%block tytul%}Lista pytań{%endblock%}
 {%block h1%}A oto one{%endblock%}
 {%block tresc%}
-    <p>{%for p in query%}</p>
-    <p>{{p.id}} {{p.pytanie}}</p>
-    {%endfor%}
+<h2>Pytania:</h2>
+<ol>
+    {%for p in query%}
+    
+        <li>{{p.pytanie}}</li>
 
+    {%endfor%}
+</ol>
 {%endblock%}
