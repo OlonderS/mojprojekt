@@ -13,7 +13,8 @@ class Wektor
         double y;
     public:
         void pobierz(int);
-        void wypisz();       
+        void wypisz();     
+        void dlugosc();  
         friend Wektor dodaj(Wektor, Wektor); 
         friend Wektor iloczyn(Wektor, Wektor); 
         
@@ -39,13 +40,15 @@ Wektor dodaj(Wektor w1, Wektor w2)
     return w3;
 }
 
-Wektor iloczyn(Wektor w1, float wsp)
+Wektor iloczyn(Wektor w1, Wektor w2)
 {
     Wektor w4;
+    float wsp;
     cout<<"Podaj współczynnik: "<<endl;
     cin>>wsp;
     w4.x = w1.x*wsp;
     w4.y = w1.y*wsp; //ty no nw jak to zrobic
+    return w4;
 }
 
 int main(int argc, char **argv)
@@ -58,6 +61,7 @@ int main(int argc, char **argv)
     w2.wypisz();
     Wektor w3;
     w3 = dodaj(w1, w2);
+    Wektor w4;
     
 	return 0;
 }

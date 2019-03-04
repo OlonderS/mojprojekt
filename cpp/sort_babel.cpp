@@ -36,7 +36,7 @@ void bubble_sort(int t[], int n)
     {
         for(int j=1;j<n; j++)
         {
-            if(t[j] < t[j-1])
+            if(t[j] > t[j-1])
             {
                 zamien(t[j], t[j-1]);
             }
